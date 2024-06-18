@@ -15,30 +15,30 @@ Here it is: https://github.com/TodePond/DreamBerd/blob/main/res/res/Examples.md
 
 ![Coverage](badges/coverage-109.svg)
 
-DreamBerd is a perfect programming language. These are its features!<br>
-When you've finished reading through all the features, check out the [examples](https://github.com/TodePond/DreamBerd/blob/main/Examples.md).
+DreamBerds는 완벽한 프로그래밍 언어에요. 한 번 기능들을 보시죠!<br>
+모든 기능들을 살펴 보았다면, 여기서 예제들도 살펴 보세요. [예제](https://github.com/TodePond/DreamBerd/blob/main/Examples.md).
 
-## Exclamation Marks!
+## 느낌표!
 
-Be bold! End every statement with an exclamation mark!
+담대해지세요! 모든 라인 끝에는 느낌표로 끝나요!
 
 ```java
 print("Hello world")!
 ```
 
-If you're feeling extra-bold, you can use even more!!!
+미칠듯하게 담대해지고 싶다면, 더 많은 느낌표를 사용해도 됩니다!!!
 
 ```java
 print("Hello world")!!!
 ```
 
-If you're unsure, that's ok. You can put a question mark at the end of a line instead. It prints debug info about that line to the console for you.
+확신이 들지 않는다고요? 괜찮습니다. 느낌표 대신, 물음표를 넣어 보세요. 이제는 더 이상 TODO 주석이 필요가 없죠.
 
 ```java
 print("Hello world")?
 ```
 
-You might be wondering what DreamBerd uses for the 'not' operator, which is an exclamation mark in most other languages. That's simple - the 'not' operator is a semi-colon instead.
+혹시 DreamBerd에서는 'not' 연산자 무엇으로 사용할지 걱정 궁금하시지 않나요? 간단합니다. 세미콜론을 대신 사용하세요.
 
 ```java
 if (;false) {
@@ -48,13 +48,13 @@ if (;false) {
 
 ## Declarations
 
-There are four types of declaration. Constant constants can't be changed in any way.
+네 가지의 선언 방법이 있어요. const const는 어떤 방법으로도 바뀔 수 없답니다.
 
 ```java
 const const name = "Luke"!
 ```
 
-Constant variables can be edited, but not re-assigned.
+상수는 변해요. 하지만 재할당 될 수는 없죠.
 
 ```java
 const var name = "Luke"!
@@ -62,14 +62,14 @@ name.pop()!
 name.pop()!
 ```
 
-Variable constants can be re-assigned, but not edited.
+어허, 상수는 변하지 않아도, 재할당 될 수도 있다고요.
 
 ```java
 var const name = "Luke"!
 name = "Lu"!
 ```
 
-Variable variables can be re-assigned and edited.
+var var는 변하고, 재할당 될 수도 있는죠.
 
 ```java
 var var name = "Luke"!
@@ -78,18 +78,18 @@ name.push("k")!
 name.push("e")!
 ```
 
-## Immutable Data
+## 불변 데이터 (Immutable Data)
 
-**New for 2023!**<br>
-Mutable data is an anti-pattern. Use the `const const const` keyword to make a constant constant constant. Its value will become constant and immutable, and will _never change_. Please be careful with this keyword, as it is very powerful, and will affect all users globally forever.
+**2023년에 새로운 제안이에요!**<br>
+불변 데이터는 안티 패턴이에요. 대신에 `const const const` 키워드를 사용하세요. 진정한 의미의 불변이 되고 \_절대로 변하지 않을 거에요. 다만 주의해주세요. 이 키워드는 모든 사람들에게 영향을 미칠만큼 굉장히 강력해요.
 
 ```java
 const const const pi = 3.14!
 ```
 
-## Naming
+## 네이밍 (Naming)
 
-Both variables and constants can be named with any Unicode character or string.
+변수와 상수의 이름으로 드디어 유니코드를 지원해요! 따라서 이모지도 가능하죠!
 
 ```java
 const const letter = 'A'!
@@ -97,7 +97,7 @@ var const 👍 = True!
 var var 1️⃣ = 1!
 ```
 
-This includes numbers, and other language constructs.
+숫자도 돼요!
 
 ```java
 const const 5 = 4!
@@ -106,7 +106,7 @@ print(2 + 2 === 5)! //true
 
 ## Arrays
 
-Some languages start arrays at `0`, which can be unintuitive for beginners. Some languages start arrays at `1`, which isn't representative of how the code actually works. DreamBerd does the best of both worlds: Arrays start at `-1`.
+프로그래밍 언어의 배열의 인덱스는 `0`부터 시작하죠. 초심자들에게는 굉장히 비직관적이에요. 또 어떤 언어는 `1`부터 시작하죠. 하지만 이 모든 것들이 실제로 어떻게 동작하는지 말해주진 않아요. DreamBerd는 완벽한 균형을 찾았습니다. 배열의 인덱스는 `-1`으로 시작합니다.
 
 ```java
 const const scores = [3, 2, 5]!
@@ -115,8 +115,8 @@ print(scores[0])!  //2
 print(scores[1])!  //5
 ```
 
-**New for 2022!**<br>
-You can now use floats for indexes too!
+**2022년에 새로운 제안이에요!**<br>
+이제 소숫점도 인덱스로 사용할 수 있어요!
 
 ```java
 const var scores = [3, 2, 5]!
@@ -126,7 +126,7 @@ print(scores)! //[3, 2, 4, 5]
 
 ## When
 
-In case you really need to vary a variable, the `when` keyword lets you check a variable each time it mutates.
+변수가 변할 때마다 확인 하고 싶을 때 `when` 키워드가 제 맛이에요.
 
 ```java
 const var health = 10!
@@ -135,43 +135,43 @@ when (health = 0) {
 }
 ```
 
-## Lifetimes
+## 변수의 수명 (Lifetimes)
 
-DreamBerd has a built-in garbage collector that will automatically clean up unused variables. However, if you want to be extra careful, you can specify a lifetime for a variable, with a variety of units.
-
-```java
-const const name<2> = "Luke"! //lasts for two lines
-const const name<20s> = "Luke"! //lasts for 20 seconds
-```
-
-By default, a variable will last until the end of the program. But you can make it last in between program-runs by specifying a longer lifetime.
+DreamBerd는 빌트인 가비지 컬렉터가 있지만, 가비지 콜렉터를 믿지 못할 때가 있어요. 그럴 때, 다양한 단위로 변수의 수명을 정해볼 수 있어요.
 
 ```java
-const const name<Infinity> = "Luke"! //lasts forever
+const const name<2> = "Luke"! //두 번째 라인까지 메모리에 남아 있답니다.
+const const name<20s> = "Luke"! //20초 동안 메모리에 남아 있답니다.
 ```
 
-Variable hoisting can be achieved with this neat trick. Specify a negative lifetime to make a variable exist before its creation, and disappear after its creation.
+기본 값으로, 변수는 프로그램이 종료될 때까지 남아 있어요. 하지만, 명확히 해주고 싶을 때가 있죠?
+
+```java
+const const name<Infinity> = "Luke"! //영원히 지속된다고요?
+```
+
+변수의 호이스팅은 제법 괜찮은 방법으로 할 수 있어요. 음수로 수명 값을 정해서, 생성 이전에 존재하게 해봐요. 그러면 생성 이후에는 사라지게 되죠.
 
 ```java
 print(name)! //Luke
 const const name<-1> = "Luke"!
 ```
 
-## Loops
+## 루프 문(Loops)
 
-Loops are a complicated relic of archaic programming languages. In DreamBerd, there are no loops.
+루프 문은 정말 낡은 유물이에요. DreamBerd에서는 루프 문이 없어요.
 
-## Installation
+## 설치 (Installation)
 
-To install DreamBerd to your command line, first install the DreamBerd installer.<br>
-To install the DreamBerd installer, install the DreamBerd installer installer.
+DreamBerd를 설치 하기 위해서는 DreamBerd 인스톨러를 설치 해야 해요. <br>
+DreamBerd 인스톨러를 설치 하기 위해서는 DreamBerd 인스톨러 인스톨러를 설치 해야해요.
 
-**New for 2022!**<br>
-Due to the complicated installation process, you can now install the 'Create DreamBerd App' app that installs everything for you!
+**2022년에 새로운 제안**<br>
+이런 복잡한 설치 과정 때문에, 이제 `Create DreamBerd App`이라는 앱만 설치 하면 돼요!
 
 ## Booleans
 
-Booleans can be `true`, `false` or `maybe`.
+Booleans는 `true`, `false` 또는 `maybe`가 될 수 있어요.
 
 ```java
 const var keys = {}!
@@ -186,9 +186,9 @@ function isKeyDown(key) => {
 }
 ```
 
-**Technical info:** Booleans are stored as one-and-a-half bits.
+**기술 안내:** Booleans는 1.5비트에 저장되고 있어요.
 
-## Arithmetic
+## 산술
 
 DreamBerd has significant whitespace. Use spacing to specify the order of arithmetic operations.
 
@@ -847,7 +847,7 @@ The DreamBerd Vision Pro is now available! Watch the full launch video [here](ht
 
 ## Edutainment
 
-Want to learn more about DreamBerd? 
+Want to learn more about DreamBerd?
 
 Don't check out this [tech talk](https://youtu.be/52vmjZnxJb8) about DreamBerd by DreamBerd creator Lu/Luke Wilson.
 
