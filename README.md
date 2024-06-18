@@ -190,28 +190,28 @@ function isKeyDown(key) => {
 
 ## 산술
 
-DreamBerd has significant whitespace. Use spacing to specify the order of arithmetic operations.
+DreamBerd whitespace에 대해 철학을 가지고 있어요. DreamBerd에서 수학적인 계산의 순서를 정하기 위해 whitespace를 사용하세요.
 
 ```java
 print(1 + 2*3)! //7
 print(1+2 * 3)! //9
 ```
 
-DreamBerd proudly supports fractions!
+DreamBerd는 자랑스럽게 분수도 지원하고 있어요.
 
 ```java
 const const half = 1/2!
 ```
 
-You can also use number names.
+당연히, 숫자 이름도 쓸 수 있어요.
 
 ```java
-print(one + two)! //3
+print(하나 + 둘)? //3 역자: i18n에 대한 대응 필요
 ```
 
-## Indents
+## 들여쓰기 (Indents)
 
-When it comes to indentation, DreamBerd strikes a happy medium that can be enjoyed by everyone: All indents must be 3 spaces long.
+들여쓰기에 대해 논하자면, DreamBerd는 굉장히 행복해요. 모두가 이제 3개의 스페이스바로 들여 쓰면 되기 때문이에요.
 
 ```java
 function main() => {
@@ -219,7 +219,7 @@ function main() => {
 }
 ```
 
--3 spaces is also allowed.
+`-3 스페이스바`도 당연히 허용 돼요.
 
 ```java
    function main() => {
@@ -227,23 +227,23 @@ print("DreamBerd is the future")!
    }
 ```
 
-## Equality
+## 동등 값 (Equality)
 
 JavaScript lets you do different levels of comparison. `==` for loose comparison, and `===` for a more precise check. DreamBerd takes this to another level.
-
-You can use `==` to do a loose check.
+JavaScript는 다른 수준에서 비교를 할 수 있게 해요. `==`는 느슨한 비교이고, `===` 보다 정확한 비교이죠. DreamBerd는 이것을 어나더 레벨로 끌어 올렸어요.
+느슨한 비교를 할 때는 `==` 사용할 수 있어요.
 
 ```java
 3.14 == "3.14"! //true
 ```
 
-You can use `===` to do a more precise check.
+보다 정확한 비교를 할 때는 `===`를 사용할 수 있어요.
 
 ```java
 3.14 === "3.14"! //false
 ```
 
-You can use `====` to be EVEN MORE precise!
+완전 핵 정확한 비교를 할 때는 `====`를 사용할 수 있어요.
 
 ```java
 const const pi = 3.14!
@@ -252,15 +252,15 @@ print(3.14 ==== 3.14)! //true
 print(3.14 ==== pi)! //false
 ```
 
-If you want to be much less precise, you can use `=`.
+정확성이 거의 필요 없을 때는 `=`를 사용할 수 있어요.
 
 ```java
 3 = 3.14! //true
 ```
 
-## Functions
+## 함수 (Functions)
 
-To declare a function, you can use any letters from the word `function` (as long as they're in order):
+함수를 선언하기 위해서는, 어떤 키워드로 사용할 수 있어요. (순서에만 맞다면요)
 
 ```java
 function add(a, b) => a + b!
@@ -271,54 +271,55 @@ functi power(a, b) => a ^ b!
 f inverse(a) => 1/a!
 ```
 
-## Dividing by Zero
+## 0으로 나눠 보기.
 
-Dividing by zero returns `undefined`.
+0으로 나누면, `undefined`를 반환해요.
 
 ```java
 print(3 / 0)! //undefined
 ```
 
-## Strings
+## 문자열 (Strings)
 
-Strings can be declared with single quotes or double quotes.
+문자열은 작은 따옴표나 큰 따옴표로 정의할 수 있어요.
 
 ```java
 const const name = 'Lu'!
 const const name = "Luke"!
 ```
 
-They can also be declared with triple quotes.
+당연히 이런 것도 가능하죠.
 
 ```java
 const const name = '''Lu'''!
 const const name = "'Lu'"!
 ```
 
-In fact, you can use any number of quotes you want.
+사실 몇개를 써도 상관 없어요.
 
 ```java
 const const name = """"Luke""""!
 ```
 
-Even zero.
+심지어 0개인데도 가능하죠.
 
 ```java
 const const name = Luke!
 ```
 
-## String Interpolation
+## 문자열 템플릿
 
-Please remember to use your regional currency when interpolating strings.
+문자열을 치환할 때는 돈을 표시 하는 기호를 사용하면 된다는 것을 기억하세요
 
 ```java
 const const name = "world"!
 print("Hello ${name}!")!
 print("Hello £{name}!")!
 print("Hello ¥{name}!")!
+print("Hello ₩{name}!")!
 ```
 
-And make sure to follow your local typographical norms.
+몇몇 나라에서는 기호가 뒤에 오는 것을 기억하세요.
 
 ```java
 print("Hello {name}€!")!
@@ -843,17 +844,17 @@ Lisp haters will also love it.
 
 ## Vision Pro
 
-The DreamBerd Vision Pro is now available! Watch the full launch video [here](https://youtu.be/QRKnrFEjDF0).
+The DreamBerd Vision Pro는 사용 가능해요! 여기서 더 많은 정보를 확인해보세요. [여기](https://youtu.be/QRKnrFEjDF0).
 
 ## Edutainment
 
-Want to learn more about DreamBerd?
+DreamBerd에 대해 배우고 싶나요?
 
-Don't check out this [tech talk](https://youtu.be/52vmjZnxJb8) about DreamBerd by DreamBerd creator Lu/Luke Wilson.
+이 링크를 확인 하지 마세요. DreamBerd의 창시자, Lu/Luke Wilson의[테크 토크](https://youtu.be/52vmjZnxJb8)
 
-## Examples
+## 예제
 
-For examples of DreamBerd in action, check out the [examples page](https://github.com/TodePond/DreamBerd/blob/main/test/Examples.md)!
+더 많은 예제를 원하다면, [예제 페이지 모음](https://github.com/TodePond/DreamBerd/blob/main/test/Examples.md)!
 
 ![image](files/star-history.png)
 
