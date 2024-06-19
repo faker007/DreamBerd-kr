@@ -7,7 +7,7 @@ Here it is: https://github.com/TodePond/DreamBerd/blob/main/res/res/Examples.md
 
 -->
 
-> **New:** [DreamBerd now supports rich text](https://github.com/TodePond/DreamBerd/releases/tag/v£.££)
+> **새롭게 두둥장:** [DreamBerd는 이제 리치 텍스트를 지원해요!](https://github.com/TodePond/DreamBerd/releases/tag/v£.££)
 
 [<img align="right" height="100" src="shapes.png">](https://github.com/TodePond/DreamBerd/blob/main/examples/Examples.md "Click here for the examples page.")
 
@@ -20,7 +20,7 @@ DreamBerds는 완벽한 프로그래밍 언어에요. 한 번 기능들을 보�
 
 ## 느낌표!
 
-담대해지세요! 모든 라인 끝에는 느낌표로 끝나요!
+담대해지세요! 모든 라인 끝은 느낌표로 끝나요!
 
 ```java
 print("Hello world")!
@@ -38,7 +38,7 @@ print("Hello world")!!!
 print("Hello world")?
 ```
 
-혹시 DreamBerd에서는 'not' 연산자 무엇으로 사용할지 걱정 궁금하시지 않나요? 간단합니다. 세미콜론을 대신 사용하세요.
+혹시 DreamBerd에서는 'not' 연산자 무엇으로 사용할지 걱정 궁금하시지 않나요? 간단합니다. 세미콜론을 사용하세요.
 
 ```java
 if (;false) {
@@ -46,7 +46,7 @@ if (;false) {
 }
 ```
 
-## Declarations
+## 선언 (Declarations)
 
 네 가지의 선언 방법이 있어요. const const는 어떤 방법으로도 바뀔 수 없답니다.
 
@@ -54,7 +54,7 @@ if (;false) {
 const const name = "Luke"!
 ```
 
-상수는 변해요. 하지만 재할당 될 수는 없죠.
+값은 변하지만, 재할당 될 수는 없죠.
 
 ```java
 const var name = "Luke"!
@@ -62,14 +62,14 @@ name.pop()!
 name.pop()!
 ```
 
-어허, 상수는 변하지 않아도, 재할당 될 수도 있다고요.
+어허, 값은 변하지 않아도, 재할당 될 수 있다고요.
 
 ```java
 var const name = "Luke"!
 name = "Lu"!
 ```
 
-var var는 변하고, 재할당 될 수도 있는죠.
+var var는 값도 변하고, 재할당 될 수 있답니다.
 
 ```java
 var var name = "Luke"!
@@ -80,8 +80,8 @@ name.push("e")!
 
 ## 불변 데이터 (Immutable Data)
 
-**2023년에 새로운 제안이에요!**<br>
-불변 데이터는 안티 패턴이에요. 대신에 `const const const` 키워드를 사용하세요. 진정한 의미의 불변이 되고 \_절대로 변하지 않을 거에요. 다만 주의해주세요. 이 키워드는 모든 사람들에게 영향을 미칠만큼 굉장히 강력해요.
+**2023년에 새로운 두둥장**<br>
+불변 데이터는 안티 패턴이에요. 대신에 `const const const` 키워드를 사용하세요. 진정한 의미의 불변이 되고 _절대로_ 변하지 않을 거에요. 다만 주의해주세요. 이 키워드는 모든 사람들에게 영향을 미칠만큼 굉장히 강력해요.
 
 ```java
 const const const pi = 3.14!
@@ -97,7 +97,7 @@ var const 👍 = True!
 var var 1️⃣ = 1!
 ```
 
-숫자도 돼요!
+숫자도 돼요! 정말 놀랍지 않나요!?
 
 ```java
 const const 5 = 4!
@@ -106,7 +106,7 @@ print(2 + 2 === 5)! //true
 
 ## Arrays
 
-프로그래밍 언어의 배열의 인덱스는 `0`부터 시작하죠. 초심자들에게는 굉장히 비직관적이에요. 또 어떤 언어는 `1`부터 시작하죠. 하지만 이 모든 것들이 실제로 어떻게 동작하는지 말해주진 않아요. DreamBerd는 완벽한 균형을 찾았습니다. 배열의 인덱스는 `-1`으로 시작합니다.
+프로그래밍 언어의 배열의 인덱스는 `0`부터 시작하죠. 초심자들에게는 굉장히 직관적이지 못해요. 또 어떤 언어는 `1`부터 시작하죠. 이 두 가지 방법들이 실제로 어떻게 동작하는지 말해주진 않아요. DreamBerd는 완벽한 균형을 찾았습니다. 바로, 배열의 인덱스는 `-1`으로 시작합니다.
 
 ```java
 const const scores = [3, 2, 5]!
@@ -115,7 +115,7 @@ print(scores[0])!  //2
 print(scores[1])!  //5
 ```
 
-**2022년에 새로운 제안이에요!**<br>
+**2022년에 새로운 두둥장**<br>
 이제 소숫점도 인덱스로 사용할 수 있어요!
 
 ```java
@@ -137,7 +137,7 @@ when (health = 0) {
 
 ## 변수의 수명 (Lifetimes)
 
-DreamBerd는 빌트인 가비지 컬렉터가 있지만, 가비지 콜렉터를 믿지 못할 때가 있어요. 그럴 때, 다양한 단위로 변수의 수명을 정해볼 수 있어요.
+DreamBerd는 빌트인 가비지 컬렉터가 있지만, 우리는 가끔 가비지 콜렉터를 믿지 못할 때가 있어요. 그럴 때 이렇게 해보세요. 다양한 단위로 변수의 수명을 정해볼 수 있어요.
 
 ```java
 const const name<2> = "Luke"! //두 번째 라인까지 메모리에 남아 있답니다.
@@ -163,11 +163,11 @@ const const name<-1> = "Luke"!
 
 ## 설치 (Installation)
 
-DreamBerd를 설치 하기 위해서는 DreamBerd 인스톨러를 설치 해야 해요. <br>
-DreamBerd 인스톨러를 설치 하기 위해서는 DreamBerd 인스톨러 인스톨러를 설치 해야해요.
+DreamBerd를 설치 하기 위해서는 DreamBerd Installer를 설치 해야 해요. <br>
+DreamBerd Installer를 설치 하기 위해서는 DreamBerd Installer Installer를 설치(Install) 해야해요.
 
-**2022년에 새로운 제안**<br>
-이런 복잡한 설치 과정 때문에, 이제 `Create DreamBerd App`이라는 앱만 설치 하면 돼요!
+**2022년에 새로운 두둥장**<br>
+이런 복잡한 설치(Install) 과정 때문에, 이제 `Create DreamBerd App`이라는 App만 설치 하면 돼요!
 
 ## Booleans
 
@@ -186,11 +186,11 @@ function isKeyDown(key) => {
 }
 ```
 
-**기술 안내:** Booleans는 1.5비트에 저장되고 있어요.
+**기술 안내:** Booleans는 1.5bits으로 처리합니다.
 
 ## 산술
 
-DreamBerd whitespace에 대해 철학을 가지고 있어요. DreamBerd에서 수학적인 계산의 순서를 정하기 위해 whitespace를 사용하세요.
+DreamBerd whitespace에 대해 놀라운 철학을 가지고 있어요. DreamBerd에서 수학적인 계산의 순서를 정하기 위해 whitespace를 사용하세요.
 
 ```java
 print(1 + 2*3)! //7
@@ -219,7 +219,7 @@ function main() => {
 }
 ```
 
-`-3 스페이스바`도 당연히 허용 돼요.
+음수 스페이스바, `-3 스페이스바`도 당연히 허용 돼요.
 
 ```java
    function main() => {
@@ -229,7 +229,6 @@ print("DreamBerd is the future")!
 
 ## 동등 값 (Equality)
 
-JavaScript lets you do different levels of comparison. `==` for loose comparison, and `===` for a more precise check. DreamBerd takes this to another level.
 JavaScript는 다른 수준에서 비교를 할 수 있게 해요. `==`는 느슨한 비교이고, `===` 보다 정확한 비교이죠. DreamBerd는 이것을 어나더 레벨로 끌어 올렸어요.
 느슨한 비교를 할 때는 `==` 사용할 수 있어요.
 
@@ -309,7 +308,7 @@ const const name = Luke!
 
 ## 문자열 템플릿
 
-문자열을 치환할 때는 돈을 표시 하는 기호를 사용하면 된다는 것을 기억하세요
+문자열을 치환할 때는 돈을 표시 하는 기호를 사용하면 된다는 것을 기억하세요.
 
 ```java
 const const name = "world"!
@@ -325,55 +324,55 @@ print("Hello ₩{name}!")!
 print("Hello {name}€!")!
 ```
 
-The symbol for the Cape Verdean escudo is placed in the decimal separator position, as in 2$50.
-Developers from the Republic of Cape Verde can benefit from this syntax.
+카보베르데 이스쿠두라는 화폐는 2$50로 표시 돼요.
+카보베르데 공화국 출신 개발자들은 이런 문법을 쓸 수 있어요.
 
 ```java
 const const player = { name: "Lu" }!
 print("Hello {player$name}!")!
 ```
 
-## Types
+## 타입 (Types)
 
-Type annotations are optional.
+타입 어노테이션(Type annotations)은 선택입니다.
 
 ```java
 const var age: Int = 28!
 ```
 
-By the way, strings are just arrays of characters.
+그리고, 문자열(strings)을 문자의 배열이고요.
 
 ```java
 String == Char[]!
 ```
 
-Similarly, integers are just arrays of digits.
+유사하게, 정수(integers) 는 숫자의 배일이죠.
 
 ```java
 Int == Digit[]!
 ```
 
-In case you want to use a binary representation for integers, `Int9` and `Int99` types are also available.
+정수를 위해 이진법을 쓰고 싶다면, `Int9` 혹은 `Int99`도 가능합니다.
 
 ```java
 const var age: Int9 = 28!
 ```
 
-**Technical info:** Type annotations don't do anything, but they help some people to feel more comfortable.
+**기술 정보:** **타입 어노테이션은 아무것도 하지 않아요**. 하지만, 몇몇 사람들에게 편안한 감정을 선사하죠.
 
-## Regular Expressions
+## 정규식 (Regular Expressions)
 
-You can use the regular expression type to narrow string values.
+문자열을 걸러내기 위해 정규식을 쓸 수 있어요
 
 ```java
 const const email: RegExp<(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])> = "mymail@mail.com"!
 ```
 
-To avoid confusion, you can use any spelling that you want, such as `Regex`, `RegularExpression` and `RegExp`.
+혼란을 피하기 위해서 `Regex`, `RegularExpression` and `RegExp` 세 가지의 키워드를 제공한답니다.
 
-For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(press|p)?/`.
+간단하게는 위 세 가지를 지원하는 정규식도 있어요! `/Reg(ular)?[eE]x(press|p)?/`.
 
-## Previous
+## (이전 값) Previous
 
 The `previous` keyword lets you see into the past.<br>
 Use it to get the previous value of a variable.
