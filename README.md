@@ -16,7 +16,7 @@ Here it is: https://github.com/TodePond/DreamBerd/blob/main/res/res/Examples.md
 ![Coverage](badges/coverage-109.svg)
 
 DreamBerds는 완벽한 프로그래밍 언어에요. 한 번 기능들을 보시죠!<br>
-모든 기능들을 살펴 보았다면, 여기서 예제들도 살펴 보세요. [예제](https://github.com/TodePond/DreamBerd/blob/main/Examples.md).
+모든 기능들을 살펴 보았다면, 여기서 예제들도 살펴 보세요. [예제](https://github.com/TodePond/DreamBerd/blob/main/Examples.md)
 
 ## 느낌표!
 
@@ -38,7 +38,7 @@ print("Hello world")!!!
 print("Hello world")?
 ```
 
-혹시 DreamBerd에서는 'not' 연산자 무엇으로 사용할지 걱정 궁금하시지 않나요? 간단합니다. 세미콜론을 사용하세요.
+혹시 DreamBerd에서는 'not' 연산자 무엇으로 사용할지 걱정이 들고, 궁금하시지 않나요? 간단합니다. 세미콜론을 사용하세요.
 
 ```java
 if (;false) {
@@ -150,7 +150,7 @@ const const name<20s> = "Luke"! //20초 동안 메모리에 남아 있답니다.
 const const name<Infinity> = "Luke"! //영원히 지속된다고요?
 ```
 
-변수의 호이스팅은 제법 괜찮은 방법으로 할 수 있어요. 음수로 수명 값을 정해서, 생성 이전에 존재하게 해봐요. 그러면 생성 이후에는 사라지게 되죠.
+변수의 호이스팅은 제법 괜찮은 방법으로 할 수 있어요. 음수로 변수의 수명을 정해서, 생성 이전에 존재하게 해봐요. 그러면 생성 이후에는 사라지게 되죠.
 
 ```java
 print(name)! //Luke
@@ -159,7 +159,7 @@ const const name<-1> = "Luke"!
 
 ## 루프 문(Loops)
 
-루프 문은 정말 낡은 유물이에요. DreamBerd에서는 루프 문이 없어요.
+루프 문은 정말이지 프로그래밍 언어의 낡은 유물이에요. 가장 완벽한 언어인 DreamBerd에서는 루프 문이 없어요.
 
 ## 설치 (Installation)
 
@@ -374,8 +374,8 @@ const const email: RegExp<(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?
 
 ## (이전 값) Previous
 
-The `previous` keyword lets you see into the past.<br>
-Use it to get the previous value of a variable.
+`previous` 키워드는 과거를 볼 수 있게 도와준답니다. <br>
+변수의 이전 값을 보고 싶다면, `previous`를 사용해보세요.
 
 ```java
 const var score = 5!
@@ -384,7 +384,7 @@ print(score)! //6
 print(previous score)! //5
 ```
 
-Similarly, the `next` keyword lets you see into the future.
+`next` 키워드는 미래를 볼 수 있게 도와줘요!
 
 ```java
 const var score = 5!
@@ -392,16 +392,17 @@ addEventListener("click", () => score++)!
 print(await next score)! //6 (when you click)
 ```
 
-Additionally, the `current` keyword lets you see into the present.
+`current` 키워드는 현재를 볼 수 있게 해주죠.
 
 ```java
 const var score = 5!
 print(current score)! //5
 ```
 
-## File Structure
+## 파일 구조 (File Structure)
 
-Write five or more equals signs to start a new file. This removes the need for multiple files or any build process.
+5개 이상의 같은 문자로 새로운 파일을 시작해보세요.
+`Dreamberd`의 새로운 파일 구조로 빌드 프로세스의 필요성을 제거해보세요!
 
 ```java
 const const score = 5!
@@ -413,8 +414,8 @@ const const score = 3!
 print(score)! //3
 ```
 
-**New for 2022!**<br>
-Thanks to recent advances in technology, you can now give files names.
+**2022년에 두둥장**<br>
+`채쉰 기술`을 통해 이제는 새로운 파일에 이름을 부여 할 수 있어요!!
 
 ```java
 ======= add.db =======
@@ -423,7 +424,7 @@ function add(a, b) => {
 }
 ```
 
-## Exporting
+## 내보내기 (Exporting)
 
 Many languages allow you to import things from specific files. In DreamBerd, importing is simpler. Instead, you export _to_ specific files!
 
