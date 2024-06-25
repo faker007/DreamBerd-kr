@@ -426,7 +426,7 @@ function add(a, b) => {
 
 ## 내보내기 (Exporting)
 
-Many languages allow you to import things from specific files. In DreamBerd, importing is simpler. Instead, you export _to_ specific files!
+많은 언어들이 import를 특정한 파일에서 가능하게 하죠. DreamBerd에서는 더욱 간단합니다. 내보내기 할 파일을 _지정_ 하기만 하면 됩니다.
 
 ```java
 ===== add.db ==
@@ -441,11 +441,11 @@ import add!
 add(3, 2)!
 ```
 
-By the way, to see DreamBerd in action, check out [this page](https://github.com/TodePond/DreamBerd/blob/main/LICENSE.md).
+그나저나, DreamBerd를 보다 실천적으로 알고 싶다면, [여기](https://github.com/TodePond/DreamBerd/blob/main/LICENSE.md)를 방문해보세요.
 
-## Classes
+## 클래스 (Classes)
 
-You can make classes, but you can only ever make one instance of them. This shouldn't affect how most object-oriented programmers work.
+클래스를 만들 수 있지만, 단 한 번만 인스턴스를 만들 수 있어요. 대다수의 객체지향 언어가 어떻게 동작 하는지에 대해 영향을 미쳐서는 안되죠.
 
 ```java
 class Player {
