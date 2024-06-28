@@ -571,7 +571,7 @@ const const message = "world"! // 3 -> 5
 reverse! // 4
 ```
 
-## 클래스 이름들 (Class Names)
+## 클래스 이름 (Class Names)
 
 다른 언어와의 최대의 호환성을 위해 `className` 키워드를 클래스를 만들 때 사용할 수 있어요.
 
@@ -583,11 +583,11 @@ className Player {
 }
 ```
 
-In response to some recent criticism about this design decision, we would like to remind you that this is part of the JavaScript specification, and therefore — out of our control.
+최근 이번 디자인 결정에 대하여 비판론이 많이 있는데, 자바스크립트의 스펙이라는 점을 상기 시켜 드리며, 저희 소관이 아님을 다시 한 번 상기 시켜 드립니다.
 
 ## DBX
 
-You can embed DBX in DreamBerd. It's just DreamBerd. And it's also just HTML.
+DBX를 DreamBerd에서 임베딩 할 수 있는데, 이건 그냥 DreamBerd이죠. 한 편 HTML이기도 하고요.
 
 ```java
 funct App() => {
@@ -595,34 +595,34 @@ funct App() => {
 }
 ```
 
-**Warning:** As you know, `class` is already a keyword in DreamBerd, so you can't use it within DBX.
+**경고:** 이미 알고 있듯, `class`는 DreamBerd의 키워드이죠. 그래서, DBX 문법에서는 `class`를 사용할 순 없습니다.
 
 ```java
 funct App() => {
-   // This is not ok
+   // 이건 옳치 못하다구요!
    return <div class="greeting">Hello world!</div>
 }
 ```
 
-`className` is also a DreamBerd keyword, so you can't use that either.
+`className` 역시 키워드입니다. 이것도 사용 못하죠.
 
 ```java
 funct App() => {
-   // This is also not ok
+   // 역시 이것도 옳치 못합니다.
    return <div className="greeting">Hello world!</div>
 }
 ```
 
-Instead, please use the `htmlClassName` attribute.
+대신에 `htmlClassName`를 쓰세요.
 
 ```java
 funct App() => {
-   // This is fine
+   // 이건 적당하네요.
    return <div htmlClassName="greeting">Hello world!</div>
 }
 ```
 
-**Please note:** Unlike JSX, you are free to freely use the `for` attribute, because — in DreamBerd, there are no loops.
+**주의 해주세요!:** JSX와는 다르게, `for` 속성에 대하여 자유롭게 사용할 수 있죠. 왜냐고요? DreamBerd에서는 `루프문이 없걸랑요`.
 
 ```java
 funct App() => {
@@ -633,9 +633,9 @@ funct App() => {
 }
 ```
 
-## Rich text
+## 리치 텍스트 (Rich text)
 
-DreamBerd now supports rich text.
+DreamBerd는 드디어 리치 텍스트를 지원합니다.
 
 <pre>
 const const <b>name</b> = "Lu"!
@@ -645,7 +645,7 @@ print(<b>name</b>)! // Lu
 print(<i>name</i>)! // Luke
 </pre>
 
-Rich text can be helpful when making your website. Use it to add links!
+리치 텍스트를 웹사이트를 만드는데 큰 도움이 되겠죠. 링크를 추가 하는데 써보는 건 어떨까요!
 
 <pre>
 &lt;p>Click <a href="https://dreamberd.computer">here</a>&lt;/p>
