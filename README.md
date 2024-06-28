@@ -453,10 +453,10 @@ class Player {
 }
 
 const var player1 = new Player()!
-const var player2 = new Player()! //Error: Can't have more than one 'Player' instance!
+const var player2 = new Player()! //Error: 하나 이상의 'Player' 인스턴스를 가질 순 없다고요!
 ```
 
-This is how you could do it instead.
+대신에 이렇게 한 번 해볼 수도 있겠죠.
 
 ```java
 class PlayerMaker {
@@ -474,49 +474,49 @@ const var player1 = playerMaker.makePlayer()!
 const var player2 = playerMaker.makePlayer()!
 ```
 
-## Time
+## 시간 (Time)
 
-Use `Date.now()` to get the current date and time.
+`Date.now()`를 사용 해서 현재 날짜와 시간을 가져 오세요.
 
 ```java
 Date.now()!
 ```
 
-You can set the time.<br>
+당연히 시간도 설정할 수 있어요.<br>
 
 ```java
 // Move the clocks back one hour
 Date.now() -= 3600000!
 ```
 
-**Important!**<br>
+**굉장히 중요해요!**<br>
 Please remember to do this when the clocks change.
 
-## Delete
+## 삭제 (Delete)
 
-To avoid confusion, the `delete` statement only works with primitive values like numbers, strings, and booleans.
+혼란을 피하기 위해서, numbers, strings, 그리고 booleans 같은 원시 타입에만 동작한답니다.
 
 ```java
 delete 3!
 print(2 + 1)! // Error: 3 has been deleted
 ```
 
-DreamBerd is a multi-paradigm programming language, which means that you can `delete` the keywords and paradigms you don't like.
+DreamBerd는 멀티 패러다임 프로그래밍 언어에요. 이게 무슨 뜻이냐고요? `delete`를 통해 마음에 들지 않는 `키워드`를 삭제 할 수 있다는 의미죠.
 
 ```java
 delete class!
 class Player {} // Error: class was deleted
 ```
 
-When perfection is achieved and there is nothing left to `delete`, you can do this:
+완벽함이 도래 했고, 더 이상 삭제할 게 없다고요? 그러면, 요것은 어떨까요?
 
 ```java
 delete delete!
 ```
 
-## Overloading
+## 오버로딩 (Overloading)
 
-You can overload variables. The most recently defined variable gets used.
+변수를 덮어 쓸 수 있어요. 가장 최근에 정의된 변수가 사용됩니다.
 
 ```java
 const const name = "Luke"!
@@ -524,7 +524,7 @@ const const name = "Lu"!
 print(name)! // "Lu"
 ```
 
-Variables with more exclamation marks get prioritised.
+느낌표가 많이 되면, 더 높은 우선위를 가집니다.
 
 ```java
 const const name = "Lu"!!
@@ -535,7 +535,7 @@ const const name = "Lu or Luke (either is fine)"!!!!!!!!!
 print(name)! // "Lu or Luke (either is fine)"
 ```
 
-In the same spirit, you can use an inverted exclamation mark for negative priority.
+비슷한 철학으로, 우선순위를 낮추기 위해 뒤집은 느낌표를 사용 할 수도 있죠.
 
 ```java
 const const name = "Lu"!
@@ -543,9 +543,9 @@ const const name = "Luke"¡
 print(name)! // "Lu"
 ```
 
-## Semantic naming
+## 시맨틱 네이밍 (Semantic naming)
 
-DreamBerd supports semantic naming.
+DreamBerd는 시맨틱 네이밍을 지원합니다.
 
 ```java
 const const sName = "Lu"!
@@ -553,28 +553,29 @@ const const iAge = 29!
 const const bHappy = true!
 ```
 
-**New for 2023:** You can now make globals!
+**2023년에 두둥장:** 이제는 시맨틱 네이밍을 통해 글로벌로 변수를 선언할 수 있어요!
 
 ```java
 const const g_fScore = 4.5!
 ```
 
-## Reversing
+## 뒤집기 (Reversing)
 
-You can reverse the direction of your code.
+코드의 순서를 뒤집을 수 있습니다.
 
 ```java
-const const message = "Hello"!
-print(message)!
-const const message = "world"!
-reverse!
+// 역자: 편의를 위해 주석으로 코드의 순서를 정리 해보았어요!
+const const message = "Hello"! // 1 -> 7
+print(message)! // 2 -> 6
+const const message = "world"! // 3 -> 5
+reverse! // 4
 ```
 
-## Class Names
+## 클래스 이름들 (Class Names)
 
-For maximum compatibility with other languages, you can also use the `className` keyword when making classes.
+다른 언어와의 최대의 호환성을 위해 `className` 키워드를 클래스를 만들 때 사용할 수 있어요.
 
-This makes things less complicated.
+이것은 많은 것들을 덜 복잡하게 하죠.
 
 ```java
 className Player {
