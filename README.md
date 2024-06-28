@@ -709,7 +709,7 @@ setScore(9)! // Set the value
 getScore()?  // Get the value (and print it)
 ```
 
-**기술적 정보:** 만약 문법이 커피라면, 이것은 완전히 순수한 커피 설탕 같은 존재입니다. 시그널 함수를 나누는 것은 완전히 상동합니다.
+**기술적 정보:** 만약 문법이 커피라면, 이것은 완전히 순수한 커피 설탕 같은 존재입니다. 시그널 함수를 구조 분해 할당 하는 것은 완전히 상동합니다.
 
 ```java
 const var [getScore, setScore] = use(0)!
@@ -718,7 +718,7 @@ getScore(9)! // Set the value
 setScore()?  // Get the value (and print it)
 ```
 
-또한, 이것이 의미하는 바는 원하는만큼 나눌 수도 있다는 것이죠. (역자: 사람마다 커피에 넣는 설탕이 다르듯...?)
+또한, 이것이 의미하는 바는 원하는만큼 나눌 수도 있다는 것이죠. (역자: 사람마다 커피에 넣는 설탕이 다르듯 말이다.)
 
 ```java
 const var [[[getScore, setScore], setScore], setScore] = use(0)!
@@ -726,12 +726,13 @@ const var [[[getScore, setScore], setScore], setScore] = use(0)!
 
 ## 인공지능 (AI)
 
-DreamBerd features AEMI, which stands for Automatic-Exclamation-Mark-Insertion. If you forget to end a statement with an exclamation mark, DreamBerd will helpfully insert one for you!
+DreamBerd는 AMEI라는 자동 느낌표 삽입 이라는 기능이 있습니다. 문장의 마지막에 느낌표 얻는 것을 깜박 한다면, 기꺼이 DreamBerd는 알아서 해줍니다.
 
 ```java
 print("Hello world") // This is fine
 ```
 
+유사하게...
 Similarly... DreamBerd also features ABI, which stands for Automatic-Bracket-Insertion. If you forget to close your brackets, DreamBerd will pop some in for you!
 
 ```java
