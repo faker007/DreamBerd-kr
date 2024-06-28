@@ -651,9 +651,9 @@ print(<i>name</i>)! // Luke
 &lt;p>Click <a href="https://dreamberd.computer">here</a>&lt;/p>
 </pre>
 
-## Asynchronous Functions
+## 비동기 함수 (Asynchronous Functions)
 
-In most languages, it's hard to get asynchronous functions to synchronise with each other. In DreamBerd, it's easy: Asynchronous functions take turns running lines of code.
+대부분의 언어에서는 비동기 함수를 서로 동기화 시키화가 굉장히 어렵습니다. DreamBerd에서는 어떨까요? 굉장히 간단하죠. 비동기 함수들을 이제 제어권을 독점하지 않습니다.
 
 ```java
 async funct count() => {
@@ -665,7 +665,7 @@ count()!
 print(2)!
 ```
 
-You can use the `noop` keyword to wait for longer before taking your turn.
+`noop`이라는 키워드를 통해, 비동기 함수가 제어권을 가져올 때까지 기다려 볼 수도 있죠.
 
 ```java
 async func count() => {
@@ -679,19 +679,19 @@ print(2)!
 print(3)!
 ```
 
-**Note:** In the program above, the computer interprets `noop` as a string and its sole purpose is to take up an extra line. You can use any string you want.
+**참고:** 위의 코드에서, `noop`는 `string` 치즈로 컴퓨터를 방해 하고 있어요. 이것의 유일한 목적은 더 많은 코드 라인을 확보 하기 위함입니다. 사실 어떤 걸 써도 가능합니다.
 
-## Signals
+## 시그널 (Signals)
 
-To use a signal, use `use`.
+시그널을 사용하기 위해서는, `use`를 사용하세요.
 
 ```java
 const var score = use(0)!
 ```
 
-When it comes to signals, the most important thing to discuss is _syntax_.
+시그널에 관해서는 말이죠, 가장 중요한 것은 *문법*입니다.
 
-In DreamBerd, you can set (and get) signals with just one function:
+DreamBerd에서는 시그널을 set 하거나, get할 수 있습니다. 오직 하나의 함수 안에서요.
 
 ```java
 const var score = use(0)!
@@ -700,7 +700,7 @@ score(9)! // Set the value
 score()?  // Get the value (and print it)
 ```
 
-Alternatively, you can be more explicit with your signal syntax, by splitting it into a getter and setter.
+그 대신에, 보다 시그널 문법에 정확하게 할 수 있습니다. 어떻게요? getter와 setter를 나눠서요.
 
 ```java
 const var [getScore, setScore] = use(0)!
@@ -709,7 +709,7 @@ setScore(9)! // Set the value
 getScore()?  // Get the value (and print it)
 ```
 
-**Technical info:** This is pure syntax sugar. The split signal functions are exactly the same as before.
+**기술적 정보:** 만약 문법이 커피라면, 이것은 완전히 순수한 커피 설탕 같은 존재입니다. 시그널 함수를 나누는 것은 완전히 상동합니다.
 
 ```java
 const var [getScore, setScore] = use(0)!
@@ -718,13 +718,13 @@ getScore(9)! // Set the value
 setScore()?  // Get the value (and print it)
 ```
 
-This means that you can carry on splitting as much as you like.
+또한, 이것이 의미하는 바는 원하는만큼 나눌 수도 있다는 것이죠. (역자: 사람마다 커피에 넣는 설탕이 다르듯...?)
 
 ```java
 const var [[[getScore, setScore], setScore], setScore] = use(0)!
 ```
 
-## AI
+## 인공지능 (AI)
 
 DreamBerd features AEMI, which stands for Automatic-Exclamation-Mark-Insertion. If you forget to end a statement with an exclamation mark, DreamBerd will helpfully insert one for you!
 
@@ -761,38 +761,37 @@ If you forget to finish your code, DreamBerd will auto-complete the whole thing!
 print( // This is probably fine
 ```
 
-**Please note:** AI does not use AI. Instead, any incomplete code will be auto-emailed to [Lu Wilson](https://todepond.com), who will get back to you with a completed line as soon as possible.
+**주의 해주세요.:** AI 파트에서는 AI를 사용하지 않습니다. 대신에, 어떤 미완성의 코드이든 [Lu Wilson](https://todepond.com)에게 보내지고, Lu Wilson는 최대한 빠르게 돌아 와주어서 코드를 완성 할겁니다.
 
-**Now recruiting:** The backlog of unfinished programs has now grown unsustainably long. If you would like to volunteer to help with AI, please write an incomplete DreamBerd program, and leave your contact details somewhere in the source code.
+**새로운 채용공고:** 정말이지 백로그가 미칠듯하게 쌓여 있어요. 이 AI 파트에 봉사 활동을 하고 싶다면, 미완성의 DreamBerd 프로그램을 만들고, 소스코드 어딘가에 연락처를 남겨 두세요!
 
-## Copilot
+## 코파일럿 (Copilot)
 
-It's worth noting that GitHub CoPilot doesn't understand DreamBerd, which means that MicroSoft won't be able to steal your code.
+GitHub의 CoPilot는 DreamBerd를 아직까지는 이해 하지 못하는데에 주목할 필요가 있죠. 왜냐고요? 이것이 의미하는 바는 MicroSoft 사는 당신의 코드를 훔쳐가지 못할테니깐요!
 
-This is great for when you want to keep your open-sourced project closed-source.
+오픈 소스 코드를 닫힌 상태로 유지하고자 할 때, 굉장히 훌륭하게 사용할 수 있습니다.
 
-## Ownership
+## 오너십 (Ownership)
 
-Using the word 'DreamBerd' in your project name implies that the DreamBerd Foundation does not own your project.
+'DreamBerd' 단어를 사용하기 해서, DreamBerd 재단이 프로젝트를 소유하고 있다는 것을 반드시 의미 하지는 않습니다.
+그렇지만, `DreamBerd` 단어를 _사용하지 않는다면_, DreamBerd 재단이 당신이 프로젝트를 _소유_ 하고 있음을 의미합니다. 오너십을 지키고 싶다면, 언제나 'DreamBerd' 프로젝트 내에서 사용하세요.
 
-However, **not** using the word 'DreamBerd' in your project implies that the DreamBerd Foundation **does** own your project. If you would like to keep ownership of your work, please always use the word 'DreamBerd' in it.
+몇몇 예시들입니다.:<br>
+✅ DreamBerdScript (DreamBerd 재단이 소유 하고 있지 않습니다. 자유롭게 사용하세요.)<br>
+❌ ECMAScript (DreamBerd 재단이 소유 하고 있습니다. 다른 이름을 사용하세요.)<br>
+❌ Rust Foundation (DreamBerd 재단이 소유 하고 있습니다. 다른 이름을 사용하세요.)
 
-Here are some examples:<br>
-✅ DreamBerdScript (not owned by the DreamBerd Foundation — you are free to use this name)<br>
-❌ ECMAScript (owned by the DreamBerd Foundation — please consider renaming)<br>
-❌ Rust Foundation (owned by the DreamBerd Foundation — please consider renaming)
+## 기여 (Contributing)
 
-## Contributing
+> 인플루언서, 스트리머, 혹은 콘텐츠 제작자라면... 이 파트를 <ins>절대</ins> 스킵해서는 안됩니다.
 
-> If you are an influencer, streamer, or content-creator... you must <ins>not</ins> skip this section during your read-through.
+DreamBerd 프로젝트에서 기여는 언제나 환영합니다.
 
-Contributions are welcomed to DreamBerd!
+가장 좋은 기여 방법은 [Stonewall charity](https://www.stonewall.org.uk/)에 후원하는 것입니다. DreamBerd 제작자가 인간의 권리를 잃는 것을 막고, 이 프로젝트를 유지하고, 지속될 수 있도록 관리하게 할 것이에요.
 
-The most helpful way you can help is by donating to the [Stonewall charity](https://www.stonewall.org.uk/). This will help to prevent the DreamBerd creator from losing their human rights, allowing maintenance of the project to continue.
+**안내말씀:** 이 기여 가이드는 지금 이 글을 보고 있는 사람들이 나무라면, 나무 털기(트리 쉐이킹)에도 큰 도움이 될 것입니다.
 
-**Note:** The contributing guide also helps to shake off unwanted fans of the project.
-
-## Compiling
+## 컴파일링 (Compiling)
 
 To run DreamBerd, first copy and paste this raw file into [chat.openai.com](https://chat.openai.com).<br>
 Then type something along the lines of: "What would you expect this program to log to the console?"<br>
