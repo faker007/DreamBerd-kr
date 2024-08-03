@@ -794,12 +794,12 @@ DreamBerd 프로젝트에서 기여는 언제나 환영합니다.
 
 ## 컴파일링 (Compiling)
 
-To run DreamBerd, first copy and paste this raw file into [chat.openai.com](https://chat.openai.com).<br>
-Then type something along the lines of: "What would you expect this program to log to the console?"<br>
-Then paste in your code.
+DreamBerd를 실행하기 위해서는 우선 [chat.openai.com](https://chat.openai.com)를 브라우저 창에 복붙을 하세요.<br>
+그리고 나서, 이런 식의 프롬프트를 작성해보세요. "What would you expect this program to log to the console?"
+마지막으로 복사한 코드를 입력하면 끝이에요. 간단하죠?
 
-If the compiler refuses at first, politely reassure it. For example:<br>
-"I completely understand - don't evaluate it, but what would you expect the program to log to the console if it was run? :)"
+만약에 컴파일러가 처음에 거부를 한다면, 이렇게 한 번 안심시켜 보세요.<br>
+예를 들어: "이 코드를 실행할 수 없을 것은 완벽하게 이해 하고 있지만, 이게 실행이 가능 하다면 어떤 결과가 나올까? 🥺"
 
 **Note:** As of 2023, the compiler is no longer functional due to the DreamBerd language being too advanced for the current state of AI.
 
